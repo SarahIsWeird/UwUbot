@@ -178,7 +178,7 @@ fun musicCommands() = commands("Music") {
 
             val att = args.first.attachments.first()
 
-            if (!att.filename.endsWith("wav")) {
+            if (!att.filename.matches(".*(wav|mp3|ogg|webm|aac|mp4|m4a|flac|m3u|pls)$".toRegex())) {
                 respond("The attachment isn't a music file!")
                 return@execute
             }
