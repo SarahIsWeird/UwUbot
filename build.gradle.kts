@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.sarahisweird"
-version = "1.0"
+version = "1.0.1"
 
 repositories {
     jcenter()
@@ -29,5 +29,5 @@ tasks.withType<KotlinCompile> {
 }
 
 application {
-    mainClass.set("MainKt")
+    mainClass.set("com.sarahisweird.uwubot.MainKt")
 }
